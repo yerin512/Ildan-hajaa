@@ -1,50 +1,65 @@
-# Welcome to your Expo app 👋
+# 일단하자 (Ildan Hajaa) 👋
+> **ADHD 사용자의 시작 동기 부여를 위한 행동 지침 타이머**
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+"9시 약속이네? 아직 8시니까 여유 있네." 하며 유튜브를 보다가 패닉에 빠지는 경험, 이제 그만.  
+**일단하자**는 숫자 중심의 압박 대신, 직관적인 **비주얼 타이머**와 **단계별 마이크로 행동 지침**으로 당신의 ‘출발 성공’을 돕습니다.
 
-## Get started
+---
 
-1. Install dependencies
+## 🌿 프로젝트 컨셉 (Concept)
 
+- **핵심 가치**: "Next Action Only" - 항상 다음에 해야 할 딱 한 가지 행동만 제시합니다.
+- **메인 컬러**: `Sage Green (#88Ab8E)` - 자극을 줄이고 마음을 차분하게 만드는 세이지 그린 컬러를 사용합니다.
+- **철학**: 실패를 죄책감이 아닌 **'자동 보정 데이터'**로 처리하여 더 나은 내일을 제안합니다.
+
+## ✨ 주요 기능 (Key Features)
+
+### 1. 비주얼 타임 타이머 (Visual Time Ring)
+- 막연한 숫자 대신, 화면 전체를 채우는 **원형 게이지**가 줄어드는 방식을 통해 남은 시간을 직관적으로 인지하게 합니다.
+
+### 2. 역산 스케줄링 (Backward Scheduling)
+- "오전 9시 도착"을 설정하면, 시스템이 거꾸로 계산하여 각 단계(씻기, 옷 입기, 준비물 챙기기)별 마감 시간을 정해줍니다.
+
+### 3. 마이크로 행동 지침 (Action-Step Notification)
+- 추상적인 알림 대신 **"지금 바로 가방에 지갑과 키를 넣으세요!"**와 같이 구체적이고 즉각적인 행동을 유도합니다.
+
+### 4. 데이터 기반 개인화 학습
+- 사용자가 "완료" 버튼을 누르는 데이터를 학습하여, 다음번에는 해당 단계의 예상 소요 시간을 더 정확하게 조정합니다.
+
+## 🛠 기술 스택 (Tech Stack)
+
+- **Framework**: React Native (Expo)
+- **Styling**: Vanilla CSS (BEM Naming Convention)
+- **API (V2 예정)**: Naver Maps API (실시간 교통 정보 기반 소요 시간 추정)
+- **Architecture**: One-Team Collaboration Structure (Planner/Designer/Developer/QA)
+
+## 🎯 MVP 범위 (MVP Scope)
+
+- **즐겨찾기 템플릿 4종**: 출근, 약속, 운동, 거실 청소 등 기본 시나리오 제공
+- **Visual Ring Timer**: 스텝별 5~12개 행동 가이드
+- **핵심 컨트롤**: 완료(했어요), 5초만(Snooze), 건너뛰기
+- **필수 3아이템 체크**: 출발 직전 지갑, 키, 이어폰 등 필수품 확인 UI
+- **세션 리포트**: 제시간 출발 성공률(On-time Rate) 및 스트릭(Streak) 기록
+
+---
+
+## 🚀 시작하기 (Get Started)
+
+1. **의존성 설치**
    ```bash
    npm install
    ```
 
-2. Start the app
-
+2. **앱 실행**
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🤝 팀 정보 (Team Info)
+- **민주**: 바이브 코딩으로 서비스 개발 기여
+- **예린**: React Native 활용 및 앱 환경 설정
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+*이 프로젝트는 ADHD 사용자의 '시간 왜곡' 문제를 해결하고 평온한 일상을 되찾기 위해 만들어졌습니다.*
