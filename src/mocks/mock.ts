@@ -1,36 +1,13 @@
-/**
- * @SPEC: 데이터 구조 정의 (Planner 모드)
- * 이 파일은 Planner가 정의한 데이터 규약이며, Developer는 이를 기반으로 실제 API를 구현합니다.
- */
-
-export interface ITodo {
+export interface ITemplate {
   id: string;
   title: string;
-  completed: boolean;
-  priority: 'low' | 'medium' | 'high';
-  dueDate?: string;
+  emoji: string;
+  defaultMinutes: number;
 }
 
-export const MOCK_TODOS: ITodo[] = [
-  {
-    id: '1',
-    title: '아침 약 복용하기',
-    completed: false,
-    priority: 'high',
-    dueDate: '2026-01-10',
-  },
-  {
-    id: '2',
-    title: '집중이 필요한 업무 1시간 하기',
-    completed: true,
-    priority: 'medium',
-    dueDate: '2026-01-10',
-  },
-  {
-    id: '3',
-    title: '명상 10분',
-    completed: false,
-    priority: 'low',
-    dueDate: '2026-01-10',
-  },
+export const MOCK_TEMPLATES: ITemplate[] = [
+  { id: '1', title: '외출 준비', emoji: '👟', defaultMinutes: 30 },
+  { id: '2', title: '독서', emoji: '📚', defaultMinutes: 25 },
+  { id: '3', title: '운동', emoji: '💪', defaultMinutes: 40 },
+  { id: '4', title: '책상 정리', emoji: '🧹', defaultMinutes: 10 },
 ];
